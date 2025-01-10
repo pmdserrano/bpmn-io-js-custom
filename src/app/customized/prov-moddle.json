@@ -1,0 +1,23 @@
+{
+  "name": "prov",
+  "uri": "http://prov/ns",
+  "prefix": "prov",
+  "xml": {
+    "tagAlias": "lowerCase"
+  },
+  "types": [
+    {
+      "name": "ProvElement",
+      "extends": [
+        "bpmn:Task"
+      ],
+      "properties": [
+        {
+          "name": "provField",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    }
+  ]
+}

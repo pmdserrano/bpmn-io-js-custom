@@ -1,0 +1,23 @@
+
+<tsg-mktplc-header></tsg-mktplc-header>
+<mat-drawer-container class="drawer-container">
+  <mat-drawer mode="side" opened>
+    <div>Views</div>
+    <mat-list role="list">
+      <mat-list-item role="listitem"><fa-icon [icon]="faHome" ></fa-icon> Home</mat-list-item>
+      <mat-list-item role="listitem"><fa-icon [icon]="faSpinner" ></fa-icon>Jobs</mat-list-item>
+      <mat-list-item role="listitem"><fa-icon [icon]="faUserCheck" ></fa-icon>Approvals</mat-list-item>
+    </mat-list>
+    <mat-divider></mat-divider>
+    <div>Resources</div>
+    <mat-list role="list">
+      <mat-list-item role="listitem"><fa-icon [icon]="faMicrochip" ></fa-icon>Tasks</mat-list-item>
+      <mat-list-item (click)="forwardToComponent('createWorkflow')" role="listitem"><fa-icon [icon]="faSitemap" ></fa-icon>Workflows</mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content><router-outlet /></mat-drawer-content>
+</mat-drawer-container>
+
+
+
+<tsg-mktplc-footer></tsg-mktplc-footer>
